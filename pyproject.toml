@@ -1,10 +1,23 @@
 [project]
 name = "expense-mcp"
-version = "1.0.0"
+version = "1.0.1"
 description = "Personal Expense Tracker MCP Server — works with Claude, Cursor, nanobot, Windsurf"
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.12"
+authors = [
+    { name = "justfsl50" },
+]
+keywords = ["mcp", "expense", "tracker", "llm", "ai", "claude", "cursor"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business :: Financial",
+]
 dependencies = [
     "mcp[cli]>=1.26.0,<2.0.0",
     "sqlalchemy>=2.0.0",
@@ -12,8 +25,13 @@ dependencies = [
     "python-dotenv>=1.0.0",
 ]
 
+[project.urls]
+Homepage = "https://github.com/justfsl50/expense-mcp"
+Repository = "https://github.com/justfsl50/expense-mcp"
+Issues = "https://github.com/justfsl50/expense-mcp/issues"
+
 [project.scripts]
-expense-mcp = "server:mcp"
+expense-mcp = "server:mcp.run"
 
 [build-system]
 requires = ["hatchling"]
@@ -21,3 +39,4 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["."]
+

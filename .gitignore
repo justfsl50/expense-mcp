@@ -28,3 +28,13 @@ Thumbs.db
 
 # Environment files
 .env
+
+# MCP Registry publisher
+mcp-publisher.exe
+mcp-publisher
+mcp-publisher.tar.gz
+.mcpregistry_*
+
+# Build artifacts
+dist/
+*.egg-info/

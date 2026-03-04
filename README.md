@@ -6,6 +6,7 @@
 [![MCP SDK](https://img.shields.io/badge/MCP_SDK-1.26.0-green)](https://github.com/modelcontextprotocol/python-sdk)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
+<!-- mcp-name: io.github.justfsl50/expense-mcp -->
 ---
 
 ## Features
